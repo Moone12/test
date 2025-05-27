@@ -1,0 +1,10 @@
+<block wx:for="{{activityList}}" wx:key="id"> 
+  <view class="activity-item" bindtap="goToDetail" data-id="{{item.id}}">
+    <image class="activity-image" src="{{item.imageUrl}}" mode="aspectFill"></image>
+    <view class="activity-info">
+      <text class="activity-name">{{item.name}}</text> 
+      <text class="activity-time">时间：{{item.time}}</text>
+      <text class="activity-location">地点：{{item.location}}</text>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,39 @@
+.detail-container {
+  padding: 20rpx;
+}
+.detail-header {
+  margin-bottom: 30rpx;
+}
+.detail-image {
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 20rpx;
+}
+.detail-title {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.detail-info {
+  margin-bottom: 40rpx;
+}
+.info-item {
+  display: flex;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+}
+.info-label {
+  width: 160rpx;
+  color: #666;
+}
+.info-content {
+  flex: 1;
+}
+.register-btn {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #007aff;
+  color: white;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  text-align: center;
+}
