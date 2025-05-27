@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="title">社区公告</view>
+  <view wx:if="{{isLoading}}">
+    <view class="loading">加载中...</view>
+  </view>
+  <view wx:else>
+    <view class="notice-item" wx:for="{{noticeList}}" wx:key="id" bindtap="goToNoticeDetail" data-id="{{item.id}}">
+      <text class="notice-title">{{item.title}}</text>
+      <text class="notice-time">{{item.createTime}}</text>
+    </view>
+    <view wx:if="{{noticeList.length === 0}}">
+      <text class="no-notice">暂无公告</text>
+    </view>
+  </view>
+</view>
